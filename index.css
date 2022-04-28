@@ -1,0 +1,1319 @@
+
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+}
+
+.sec
+{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    top: 0px;
+    background: #091F58;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.315);
+}
+.NavButtons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    background: none;
+}
+.NameOrLogo
+{
+    position: relative;
+    height: 100%;
+    background: none;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 120px;
+}
+.NameOrLogo h1
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FA8752;
+    text-align: center;
+    background: none;
+    font-size: 40px;
+}
+/*----------------------*/
+.sec-center {
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+    z-index: 200;
+    left: 30px;
+  }
+  [type="checkbox"]:checked,
+  [type="checkbox"]:not(:checked){
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .dropdown:checked + label,
+  .dropdown:not(:checked) + label{
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 2;
+    height: 50px;
+    transition: all 200ms linear;
+    border-radius: 4px;
+    width: 50px;
+    letter-spacing: 1px;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    text-align: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #FA8752;
+  }
+  .dropdown:checked + label:before,
+  .dropdown:not(:checked) + label:before{
+    position: fixed;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    cursor: auto;
+    pointer-events: none;
+  }
+  .dropdown:checked + label:before{
+    pointer-events: auto;
+  }
+  .dropdown:not(:checked) + label .uil {
+    font-size: 24px;
+    margin-left: 10px;
+    transition: transform 200ms linear;
+  }
+  .dropdown:checked + label .uil {
+    transform: rotate(180deg);
+    font-size: 24px;
+    margin-left: 10px;
+    transition: transform 200ms linear;
+  }
+  .section-dropdown {
+    position: absolute;
+    padding: 5px;
+    background-color: #111;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    border-radius: 4px;
+    display: block;
+    box-shadow: 0 14px 35px 0 rgba(9,9,12,0.4);
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: all 200ms linear;
+  }
+  .dark-light:checked ~ .sec-center .section-dropdown {
+    background-color: #fff;
+    box-shadow: 0 14px 35px 0 rgba(9,9,12,0.15);
+  }
+  .dropdown:checked ~ .section-dropdown{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+  .section-dropdown:before {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    content: '';
+    display: block;
+    z-index: 1;
+  }
+  .section-dropdown:after {
+    position: absolute;
+    top: -7px;
+    left: 30px;
+    width: 0; 
+    height: 0; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent; 
+    border-bottom: 8px solid #111;
+    content: '';
+    display: block;
+    z-index: 2;
+    transition: all 200ms linear;
+  }
+  
+  a {
+    position: relative;
+    color: #fff;
+    transition: all 200ms linear;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 2px;
+    padding: 5px 0;
+    padding-left: 20px;
+    padding-right: 15px;
+    margin: 2px 0;
+    text-align: left;
+    text-decoration: none;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+      -ms-flex-pack: distribute;
+  }
+  a:hover {
+    color: #102770;
+    background-color: #FA8752;
+  }
+  a .uil {
+    font-size: 22px;
+  }
+
+/*----------------------*/
+
+.SignUp
+{
+    width: 120px;
+    height: 70%;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-right: 120px;
+}
+.SignUp:hover
+{
+    box-shadow: 0px 0px 20px black;
+    transition: 0.5s;
+    background: #ff651e;
+}
+.SignUp:hover h1
+{
+    color: white;
+    transition: 0.5s;
+}
+.SignUp h1
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #091F58;
+    text-align: center;
+    background: none;
+    font-size: 15px;
+    transition: 0.5s;
+}
+/*---------------------------------------------------------------------------------------------------*/
+.home
+{
+    width: 100%;
+    height: 500px;
+    background: #091F58;
+    top: 0px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+#bgdec1
+{
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 0%;
+}
+#bgdec2
+{
+    position: absolute;
+    z-index: 1;
+    top: -7%;
+    left: 85%;
+    transform: rotateZ(270deg);
+}
+#bgdec3
+{
+    position: absolute;
+    z-index: 1;
+    top: 95%;
+    left: 80%;
+}
+.home-area1
+{
+    width: 50%;
+    position: relative;
+    background: none;
+    height: 100%;
+}
+#home-tıttle
+{
+    background: none;
+    width: 100%;
+    padding-right: 120px;
+    padding-left: 120px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#home-tıttle h1 span
+{
+    color: #FA8752;
+    text-transform: uppercase;
+}
+#home-tıttle h1
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background: none;
+    font-size: 45px;
+    position: relative;
+    text-align: start;
+}
+#home-tıttle h2
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background: none;
+    font-size: 20px;
+    font-weight: 100;
+    position: relative;
+    text-align: start;
+}
+#home-sıgnup
+{
+    background: none;
+    width: 350px;
+    height: 40px;
+    border-style: none;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#home-sıgnup-ınput
+{
+    background: white;
+    width: 100%;
+    height: 100%;
+    border-style: none;
+    border-radius: 20px;
+    position: relative;
+}
+#home-sıgnup-ınput input
+{
+    background: none;
+    width: 90%;
+    height: 100%;
+    border-style: none;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 20px;
+}
+#home-sıgnup-ınput input:focus
+{
+    outline-offset: 0px;
+    outline: none;
+
+}
+#home-sıgnup-button
+{
+    border-style: none;
+    border-radius: 20px;
+    background: #FA8752;
+    position: absolute;
+    right: 0px;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#home-sıgnup-button:hover
+{
+    box-shadow: 0px 0px 20px black;
+    transition: 0.5s;
+    background: #ff5100;
+}
+#home-sıgnup-button h1
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background: none;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 100;
+    position: relative;
+}
+.mobile-sign
+{
+    position: relative;
+    background: none;
+    display: none;
+    justify-content:space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: center;
+    column-gap: 20px;
+    margin-top: 30px;
+    width: 90%;
+    z-index: 20;
+}
+
+#sıgin
+{
+    border: none;
+    background: #FA8752;
+    width: 40%;
+    border-radius: 20px;    
+    position: relative;
+    cursor: pointer;
+}
+#sıgin:hover
+{
+    box-shadow: 0px 0px 20px black;
+    transition: 0.5s;
+    background: #ff5100;
+}
+#sıgin h1
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 3.5vw;
+    text-align: center;
+    font-weight: 100;
+}
+#login h1
+{
+    font-size: 3.5vw;
+    text-align: center;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+#login
+{
+    background: #091F58;
+    border: 1px solid white;
+    cursor: pointer;
+    width: 40%;
+    border-radius: 20px;
+    position: relative;
+}
+#login:hover
+{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.445);
+    transition: 0.5s;
+    background: #0d245c;
+}
+.home-area2
+{
+    width: 50%;
+    height: 100%;
+    background: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-area2 img
+{
+    background: none;
+    position: relative;
+}
+.promotion
+{
+    width: 100%;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 150px;
+    flex-wrap: wrap;
+    position: relative;
+    padding-top: 50px;
+}
+#promotion-box1
+{
+    height: 300px;
+    width: 300px;
+    background: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+#promotion-logo1
+{
+    width: 80px;
+    height: 80px;
+    background: #FA8752;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+#promotion-logo1 ion-icon
+{
+    font-size: 50px;
+    color: white;
+}
+#promotion-box1 h1
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #091F58;
+    text-align: center;
+    background: none;
+    font-size: 25px;
+    font-weight: 800;
+    position: relative;
+}
+#promotion-box1 h2
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #091F58;
+    text-align: center;
+    background: none;
+    font-size: 15px;
+    font-weight: 100;
+    position: relative;
+}
+#promotion-box2
+{
+    height: 300px;
+    width: 300px;
+    background: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+#promotion-logo2
+{
+    width: 80px;
+    height: 80px;
+    background: #FA8752;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+#promotion-logo2 ion-icon
+{
+    font-size: 50px;
+    color: white;
+}
+#promotion-box2 h1
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #091F58;
+    background: none;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 800;
+    position: relative;
+}
+#promotion-box2 h2
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #091F58;
+    background: none;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 100;
+    position: relative;
+}
+#promotion-box3
+{
+    height: 300px;
+    width: 300px;
+    background: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+#promotion-logo3
+{
+    width: 80px;
+    height: 80px;
+    background: #FA8752;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+#promotion-logo3 ion-icon
+{
+    font-size: 50px;
+    color: white;
+}
+#promotion-box3 h1
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #091F58;
+    text-align: center;
+    background: none;
+    font-size: 25px;
+    font-weight: 800;
+    position: relative;
+}
+#promotion-box3 h2
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #091F58;
+    text-align: center;
+    background: none;
+    font-size: 15px;
+    font-weight: 100;
+    position: relative;
+}
+
+
+
+.offers
+{
+    width: 100%;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.offers h1
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #091F58;
+    font-size: 30px;
+    font-weight: 800;
+    position: relative;
+    text-align: center;
+}
+.offers h2
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FA8752;
+    font-size: 20px;
+    font-weight: 200;
+    position: relative;
+    text-align: center;
+}
+.offers-cards
+{
+    width: 100%;
+    position: relative;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    row-gap: 10px;
+}
+#offers-card1
+{
+    width: 400px;
+    position: relative;
+    background: white;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(82, 82, 82);
+    transition: 1s;
+}
+#offers-card1:hover
+{
+    height: 650px;
+    transition: 1s;
+}
+#offers-card2
+{
+    width: 400px;
+    position: relative;
+    background: #091F58;
+    height: 650px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(82, 82, 82);
+    transition: 1s;
+    
+}
+#offers-card2_NotHover
+{
+    width: 400px;
+    position: relative;
+    background: #091F58;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(82, 82, 82);
+    transition: 1s;
+}
+#offers-card3
+{
+    width: 400px;
+    position: relative;
+    background: white;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(82, 82, 82);
+    transition: 1s;
+}
+#offers-card3:hover
+{
+    height: 650px;
+    transition: 1s;
+}
+#card1_text1
+{
+    text-transform: uppercase;
+    color: #091F58;
+}
+#card2_text1
+{
+    width: 100%;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#card2_text1 h1
+{
+    text-transform: uppercase;
+    color: #091F58;
+    background: white;
+    display: inline-block;
+    text-align: center;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+}
+#card3_text1
+{
+    text-transform: uppercase;
+    color: #091F58;
+}
+#card2_text2
+{
+    color: #FA8752;
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    font-weight: 100;
+}
+#card1_text2
+{
+    color: #FA8752;
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    font-weight: 100;
+}
+#card3_text2
+{
+    color: #FA8752;
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    font-weight: 100;
+}
+#card1_list
+{
+    width: 100%;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card1_list2
+{
+    width: 100%;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card2_list
+{
+    width: 100%;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card2_list2
+{
+    width: 100%;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card3_list
+{
+    width: 100%;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card1_list ul
+{
+    width: 80%;
+    height: 100%;
+    background: none;
+    list-style: none;
+}
+#card1_list2 ul
+{
+    width: 80%;
+    height: 100%;
+    background: none;
+    list-style: none;
+}
+#card2_list ul
+{
+    width: 80%;
+    height: 100%;
+    background: none;
+    list-style: none;
+}
+#card2_list2 ul
+{
+    width: 80%;
+    height: 100%;
+    background: none;
+    list-style: none;
+}
+#card3_list ul
+{
+    width: 80%;
+    height: 100%;
+    background: none;
+    list-style: none;
+}
+#card1_list ul li::before
+{
+    content: "\f00c"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.3em; /* same as padding-left set on li */
+}
+#card1_list2 ul li::before
+{
+    content: "\f00d"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.3em; /* same as padding-left set on li */
+}
+#card2_list ul li::before
+{
+    content: "\f00c"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.3em; /* same as padding-left set on li */
+}
+#card2_list2 ul li::before
+{
+    content: "\f00d"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.3em; /* same as padding-left set on li */
+}
+#card3_list ul li::before
+{
+    content: "\f00c"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.3em; /* same as padding-left set on li */
+}
+#card1_list ul li , #card3_list ul li
+{
+    color: #091F58;
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#card1_list2 ul li
+{
+    color: rgb(197, 197, 197);
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#card2_list ul li
+{
+    color: white;
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#card2_list2 ul li
+{
+    color: rgb(163, 163, 163);
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#offerbutton1
+{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+}
+#offerbutton1 h1
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #FA8752;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+    box-shadow: 0px 0px 20px rgb(139, 139, 139);
+}
+#offerbutton1 h1:hover
+{
+    background: #091F58;
+    transition: 0.5s;
+    color: #FA8752;
+}
+#offerbutton2
+{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+}
+#offerbutton2 h1
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+    color: #091F58;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.418);
+    transition: 0.5s;
+}
+#offerbutton2 h1:hover
+{
+    background: #FA8752;
+    transition: 0.5s;
+    color: white;
+    box-shadow: 0px 0px 20px #fa875285;
+}
+#offerbutton3
+{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+}
+#offerbutton3 h1
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #FA8752;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0px 0px 20px rgb(139, 139, 139);
+    transition: 0.5s;
+}
+#offerbutton3 h1:hover
+{
+    background: #091F58;
+    transition: 0.5s;
+    color: #FA8752;
+}
+.footer
+{
+    position: relative;
+    background: #091F58;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.footer h1
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+/*---------------------MEDİA-QUERİES---------------------------------*/
+@media only screen and (max-width:1300px)
+{
+    .home-area2
+    {
+        display: none;
+    }
+    .home-area1
+    {
+        width: 100%;
+    }
+
+    #offers-card3:hover
+    {
+        height: 610px;
+        width: 410px;
+        transition: 1s;
+        border-radius: 40px;
+    }
+    #offers-card1:hover
+    {
+        transition: 1s;
+        height: 610px;
+        width: 410px;
+        border-radius: 40px;
+    }
+    #offers-card2
+    {
+        height: 600px;
+    }
+    #offers-card2:hover
+    {
+        height: 610px;
+        width: 410px;
+        border-radius: 40px;
+    }
+    #offers-card2_NotHover:hover
+    {
+        height: 610px;
+        width: 410px;
+        border-radius: 40px;
+    }
+    .offers-cards
+    {
+        row-gap: 50px;
+    }
+}
+
+@media only screen and (max-width:850px)
+{
+    #home-tıttle h1
+    {
+        font-size: 30px;
+    }
+    #home-tıttle h2
+    {
+        font-size: 15px;
+    }
+    #home-tıttle
+    {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .SignUp
+    {
+        margin-right: 50px;
+    }
+    .NameOrLogo
+    {
+        margin-left: 50px;
+    }
+    .NameOrLogo h1
+    {
+        
+    }
+    #home-sıgnup
+    {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #home-sıgnup-ınput
+    {
+        
+    }
+    .footer h1
+    {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:500px)
+{
+    #home-tıttle h1
+    {
+        font-size: 6.5vw;
+        text-align: center;
+    }
+    #home-tıttle h2
+    {
+        font-size: 3.5vw;
+        text-align: center;
+    }
+    .SignUp
+    {
+        display: none;
+    }
+    .NameOrLogo
+    {
+        margin-left: 50px;
+    }
+    .NameOrLogo h1
+    {
+        font-size: 25px;
+    }
+    #home-tıttle
+    {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #home-sıgnup
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        
+    }
+    #home-sıgnup-button
+    {
+        display: none;
+    }
+    .home-area1
+    {
+        justify-content: start;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #promotion-logo1
+    {
+        width: 70px;
+        height: 70px;
+    }
+    #promotion-logo1 ion-icon
+    {
+        font-size: 40px;
+    }
+    #promotion-logo2
+    {
+        width: 70px;
+        height: 70px;
+    }
+    #promotion-logo2 ion-icon
+    {
+        font-size: 40px;
+    }
+    #promotion-logo3
+    {
+        width: 70px;
+        height: 70px;
+    }
+    #promotion-logo3 ion-icon
+    {
+        font-size: 40px;
+    }
+    #promotion-box1 h1
+    {
+        font-size: 20px;
+    }
+    #promotion-box2 h1
+    {
+        font-size: 20px;
+    }
+    #promotion-box3 h1
+    {
+        font-size: 20px;
+    }
+    #promotion-box1 h2
+    {
+        font-size: 15px;
+    }
+    #promotion-box2 h2
+    {
+        font-size: 15px;
+    }
+    #promotion-box3 h2
+    {
+        font-size: 15px;
+    }
+    /*--------------------------*/
+    #offers-card1
+    {   
+        width: 250px;
+        height: 450px;
+    }
+    #offers-card1:hover
+    {
+        height: 460px;
+        width: 260px;
+    }
+    #offers-card2
+    {   
+        width: 250px;
+        height: 480px;
+    }
+    #offers-card2:hover
+    {
+        height: 500px;
+        width: 260px;
+    }
+    #offers-card2_NotHover:hover
+    {
+        height: 500px;
+        width: 260px;
+    }
+    #offers-card2_NotHover
+    {
+        width: 250px;
+        height: 480px;
+    }
+    #offers-card3
+    {   
+        width: 250px;
+        height: 450px;
+    }
+    #offers-card3:hover
+    {
+        height: 460px;
+        width: 260px;
+    }
+    #card1_text1
+    {
+        font-size: 25px;
+    }
+    #card1_text2
+    {
+        font-size: 20px;
+    }
+    #card2_text1
+    {
+        font-size: 25px;
+    }
+    #card2_text2
+    {
+        font-size: 20px;
+    }
+    #card3_text1
+    {
+        font-size: 25px;
+    }
+    #card3_text2
+    {
+        font-size: 20px;
+    }
+    #card1_list ul li
+    {
+        font-size: 15px;
+    }
+    #card1_list2 ul li
+    {
+        font-size: 15px;
+    }
+    #card2_list ul li
+    {
+        font-size: 15px;
+    }
+    #card2_list2 ul li
+    {
+        font-size: 15px;
+    }
+    #card3_list ul li
+    {
+        font-size: 15px;
+    }
+    .offers h1
+    {
+        font-size: 22px;
+    }
+    .offers h2
+    {
+        font-size: 18px;
+    }
+    .footer h1
+    {
+        font-size: 15px;
+    }
+    .mobile-sign
+    {
+        display: flex;
+    }
+    .sec-center
+    {
+        margin-right: 50px;
+    }
+}
